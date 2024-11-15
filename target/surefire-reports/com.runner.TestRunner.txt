@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: com.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 48.386 s <<< FAILURE! - in com.runner.TestRunner
+com.runner.TestRunner.runScenario["Login in to an application", "Title of your feature"](1)  Time elapsed: 18.838 s  <<< FAILURE!
+java.lang.AssertionError: Text is not matching expected [true] but found [false]
+
+com.runner.TestRunner.runScenario["Login in to an application", "Login in to a website"](2)  Time elapsed: 10.268 s  <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'I enter username and password to application' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("I enter username and password to application")
+public void i_enter_username_and_password_to_application() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+com.runner.TestRunner.runScenario["Login in to an application", "Login in to a website"](3)  Time elapsed: 17.321 s  <<< FAILURE!
+java.lang.AssertionError: Text is not matching expected [true] but found [false]
+
